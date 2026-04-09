@@ -1,0 +1,23 @@
+""" 
+Print the following pattern where each row contains a number repeated a specific number of times based on its value.
+
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5
+Exercise Purpose: Pattern printing is a classic way to learn “Nested Loops.” You coordinate an outer loop for rows and an inner loop for columns or repetitions. This improves spatial logic and control over output formatting.
+
+Given Input: Range: 1 to 5
+
+Expected Output: (The pattern shown above)
+"""
+num = int (input("Enter the number : "))
+
+#outer loop
+for num in range(1,num+1):
+    # Inner loop for repetition
+    for i in range(num):
+        print(num, end=" ") # end=" " keeps it on the same line
+    # New line after each row
+    print("\n")
